@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var f,a,b,n;
+        function calc(f)
+        {
+            a = parseInt(f.a.value);
+            f.b.value = fact(a)
+        }
+        function fact(n)
+        {
+            if(n<=1)
+            return 1;
+            else
+            return(n * fact(n-1));
+        }
+    </script>
+</head>
+<body>
+    <hr>
+    <br>
+    <h2 align="center">
+    <marquee>
+        Factorial
+    </marquee>
+    </h2>
+    <br>
+   
+    <h3>
+        <form>
+            <center>
+          <h3>Enter the number : 
+            <input type="text" name = "a">
+          </h3>  
+          <h3>The factorial is :
+            <input type="text" name = "b">
+          </h3>
+          <h3><input type="button" value="Find the factorial" onClick ="calc(this.form)"></h3>
+        </center>
+        </form>
+    </h3>
+    <hr>
+</body>
+</html>
